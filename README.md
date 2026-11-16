@@ -1,5 +1,7 @@
 # GuliweRR
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24280695.svg)](https://doi.org/10.5281/zenodo.24280695)
+
 *Guided Linear Waves by Ritz–Rayleigh* — a MATLAB toolbox, with a one-to-one Julia version, that calculates elastic-wave propagation in anisotropic, layered media: surface-guided waves (surface acoustic waves, SAWs) on a half-space or film(s)-on-substrate stack, and Lamb-wave dispersion on a free (multi-layered) plate.
 
 ## What it does
@@ -109,7 +111,7 @@ Versions are numbered MAJOR.MINOR.PATCH: MAJOR marks a large restructuring of th
 
 ## Citation
 
-If you use GuliweRR in your research, please cite the software itself (see [`CITATION.cff`](CITATION.cff)) and the method paper(s) below — Grabec et al. (2024) is the main, most up-to-date reference and should be cited by default; add the others only if specifically relevant, and add the Green's-function paper as well if you used `GreenSolver`:
+If you use GuliweRR in your research, please cite the software itself ([doi:10.5281/zenodo.24280695](https://doi.org/10.5281/zenodo.24280695), see [`CITATION.cff`](CITATION.cff)) and the method paper(s) below — Grabec et al. (2024) is the main, most up-to-date reference and should be cited by default; add the others only if specifically relevant, and add the Green's-function paper as well if you used `GreenSolver`:
 
 - **Main reference (default)** — Grabec, T., Soudná, Z., Repček, K., Lünser, K., Fähler, S., Stoklasová, P., Sedlák, P., Seiner, H. (2024). Guided acoustic waves in thin epitaxial films: Experiment and inverse problem solution for NiTi. *Ultrasonics*, 138, 107211. [doi:10.1016/j.ultras.2023.107211](https://doi.org/10.1016/j.ultras.2023.107211)
 - **Lamb (plate) waves** — Grabec, T., Sedlák, P., Seiner, H. (2020). Application of the Ritz–Rayleigh method for Lamb waves in extremely anisotropic media. *Wave Motion*, 96, 102567. [doi:10.1016/j.wavemoti.2020.102567](https://doi.org/10.1016/j.wavemoti.2020.102567)

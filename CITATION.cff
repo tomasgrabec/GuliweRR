@@ -24,6 +24,7 @@ authors:
     family-names: Grabec
     orcid: "https://orcid.org/0000-0002-5211-8217"
 repository-code: "https://github.com/tomasgrabec/GuliweRR"
+doi: 10.5281/zenodo.24280695
 license: ISC
 keywords:
   - surface acoustic waves
