@@ -1,0 +1,25 @@
+# MATLAB autosave and backup files
+*.asv
+*.m~
+
+# Compiled MEX files (platform-specific binaries)
+*.mex*
+
+# MATLAB figures saved to file
+*.fig
+
+# Calculation output (Calc.saveResult, example figures)
+results/
+
+# Data files
+*.mat
+
+# Julia: the package pins version bounds in Project.toml; Manifest.toml is per user
+juliaPort/guliwerrJ/Manifest.toml
+
+# macOS, Windows, VS Code
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+.vscode/

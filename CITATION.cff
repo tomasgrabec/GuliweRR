@@ -1,0 +1,133 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata below.
+  Please also cite the relevant method paper(s) listed under
+  "references": Grabec et al. (2024) is the main, most up-to-date
+  method reference and should be cited by default. Add Stoklasova
+  et al. (2015) as well if you specifically need the half-space
+  inverse-procedure discussion or historical attribution, or Grabec
+  et al. (2020) if you used Lamb/plate-wave calculations (see each
+  reference's "notes" field below). Add the Every et al.
+  Green's-function paper as well if you used GreenSolver, regardless
+  of which other paper applies.
+type: software
+title: GuliweRR
+version: 6.0.0
+date-released: "2026-11-16"
+abstract: >-
+  Guided Linear Waves by Ritz–Rayleigh — MATLAB and Julia software for
+  calculating elastic-wave propagation in anisotropic and layered media,
+  with a focus on surface acoustic waves (SAWs). The two implementations
+  are kept one-to-one and give the same results.
+authors:
+  - given-names: Tomas
+    family-names: Grabec
+    orcid: "https://orcid.org/0000-0002-5211-8217"
+repository-code: "https://github.com/tomasgrabec/GuliweRR"
+license: ISC
+keywords:
+  - surface acoustic waves
+  - Ritz-Rayleigh method
+  - anisotropic elasticity
+  - laser ultrasonics
+  - guided waves
+  - MATLAB
+  - Julia
+references:
+  - type: article
+    authors:
+      - given-names: Tomas
+        family-names: Grabec
+      - given-names: Zuzana
+        family-names: Soudná
+      - given-names: Kristýna
+        family-names: Repček
+      - given-names: Klara
+        family-names: Lünser
+      - given-names: Sebastian
+        family-names: Fähler
+      - given-names: Pavla
+        family-names: Stoklasová
+      - given-names: Petr
+        family-names: Sedlák
+      - given-names: Hanuš
+        family-names: Seiner
+    title: >-
+      Guided acoustic waves in thin epitaxial films: Experiment and
+      inverse problem solution for NiTi
+    journal: Ultrasonics
+    volume: 138
+    year: 2024
+    doi: 10.1016/j.ultras.2023.107211
+    notes: >-
+      Ritz-Rayleigh method, main paper -- most up-to-date, covers
+      layered/film-on-substrate media and the current
+      complex-exponential-harmonic formulation, plus the
+      inverse-procedure discussion for layered systems. Cite this one
+      by default.
+  - type: article
+    authors:
+      - given-names: Tomas
+        family-names: Grabec
+      - given-names: Petr
+        family-names: Sedlák
+      - given-names: Hanuš
+        family-names: Seiner
+    title: >-
+      Application of the Ritz-Rayleigh method for Lamb waves in
+      extremely anisotropic media
+    journal: Wave Motion
+    volume: 96
+    year: 2020
+    doi: 10.1016/j.wavemoti.2020.102567
+    notes: >-
+      Ritz-Rayleigh method extended to Lamb (plate) waves, in the
+      earlier real-valued (sin/cos) harmonic formulation -- cite this
+      one for plate/Lamb-wave calculations (no updated Lamb-wave
+      paper yet).
+  - type: article
+    authors:
+      - given-names: Pavla
+        family-names: Stoklasová
+      - given-names: Petr
+        family-names: Sedlák
+      - given-names: Hanuš
+        family-names: Seiner
+      - given-names: Michal
+        family-names: Landa
+    title: >-
+      Forward and inverse problems for surface acoustic waves in
+      anisotropic media: A Ritz-Rayleigh method based approach
+    journal: Ultrasonics
+    volume: 56
+    start: "381"
+    end: "389"
+    year: 2015
+    doi: 10.1016/j.ultras.2014.09.004
+    notes: >-
+      Original Ritz-Rayleigh paper -- half-space, earlier real-valued
+      (sin/cos) harmonic formulation, marginally superseded by Grabec
+      et al. (2024). Cite mainly for historical attribution or the
+      half-space inverse-procedure discussion.
+  - type: article
+    authors:
+      - given-names: Arthur G.
+        family-names: Every
+      - given-names: K. Y.
+        family-names: Kim
+      - given-names: Alexei A.
+        family-names: Maznev
+    title: >-
+      The elastodynamic response of a semi-infinite anisotropic solid
+      to sudden surface loading
+    journal: Journal of the Acoustical Society of America
+    volume: 102
+    issue: 3
+    start: "1346"
+    end: "1355"
+    year: 1997
+    doi: 10.1121/1.420053
+    notes: >-
+      Green's-function method -- cite this one in addition to whichever
+      Ritz-Rayleigh paper above matches your case, if you used
+      GreenSolver.

@@ -1,0 +1,37 @@
+name = "GuliwerrJ"
+uuid = "713aa40b-ecfe-4eff-9f33-1c295148dc42"
+authors = ["Tomas Grabec"]
+version = "6.0.0"
+
+[deps]
+Contour = "d38c429a-6771-53c6-b99e-75d170b6e991"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+Hungarian = "e91730f6-4275-51fb-a7a0-7064cfbd3b39"
+Interpolations = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+Peaks = "18e31ff7-3703-566c-8e60-38913d67486b"
+QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[weakdeps]
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+
+# NOTE: the extension triggers on `Makie` alone, not `GLMakie` --
+# Makie's own public API (Figure/Axis/lines!/heatmap!/surface!) is backend-
+# agnostic, and `using GLMakie` (or `using WGLMakie`) loads Makie as a real
+# transitive dependency into the process, which is enough to activate a
+# `Makie`-keyed extension regardless of which concrete backend the *user*
+# chose. This keeps a browser/remote deployment (WGLMakie) a zero-code-change
+# swap. GLMakie stays a declared weakdep because the GUI viewers may need
+# GLMakie-specific widget/event APIs beyond plain Makie.
+
+[extensions]
+GuliwerrJMakieExt = "Makie"
+
+[compat]
+FFTW = "1.10.0"
+SpecialFunctions = "2"
+julia = "1.13"
